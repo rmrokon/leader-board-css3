@@ -156,3 +156,40 @@ hr{
     font-size: 14px;
     padding: 5px;
 }
+
+/* ------------------------------------
+              Media Queries
+---------------------------------------- */
+/* Mobile Devices */
+
+@media only screen and (max-width: 600px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog{
+        flex-direction: column;
+    }
+    .courses{
+        flex-wrap: wrap;
+    }
+}
+
+/*------------------------ tablet devices---------- */
+@media only screen and (min-width: 688px) and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+    .players, .blogs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .player, .blog{
+        flex-direction: column;
+    }
+    .courses{
+        flex-wrap: wrap;
+    }
+}
+
